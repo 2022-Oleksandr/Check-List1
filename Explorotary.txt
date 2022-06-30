@@ -1,0 +1,73 @@
+   Exploratory testing map by https://qauto2.forstudy.space "Guest login" link
+
+   Menu "Guest Login":
+
+   Visual defect for UI elements
+
+   Top page:
+- Hillel logo
+- Garage
+- Fuel Expenses
+- Instructions
+- Logo "My profile"
+
+  Middle page:
+- Garage
+- Fuel Expenses
+- Instructions
+- Log out
+- Button "Add car"
+
+
+   Main page structure investigation:
+
+Hillel logo click→ redirect to primary page
+Garage→ redirect to page https://qauto2.forstudy.space/panel/garage
+Fuel Expenses→ redirect to page https://qauto2.forstudy.space/panel/expenses
+Instructions→ redirect to page https://qauto2.forstudy.space/panel/instructions
+Logo "My profile" → redirect to pages: Garage, Fuel Expenses, Instructions, Log out
+Log out → redirect to main page
+
+   Garage
+
+Button "Add car" click→ redirect to window, whern we can choose Brand, Model, Mileage and 2 buttons "Cancel" and "Add"
+
+- Brand line → we can choose 5 kinds: Audi. BMW. Ford, Porsche. Fiat
+- Model line→ every Brand has its own models:
+1) Audi - TT, R8, Q7, A6, A8
+2) BMW - 3, 5, X5, X6, Z3
+3) Ford - Fiesta, Focus, Fusion, Mondeo, Sierra
+4) Porsche - 911, Cayenne, Panamera
+5) Fiat - Palio, Ducato, Panda, Punto, Scudo
+- Mileage line → consist of numbers from 0 to 999999
+- Button "Cancel"→ delete entered data
+- Button "Add" → enter data to page "Garage"
+ 
+   Then selected brand car has 3 buttons:
+
+- Update mileage
+you can enter new data at window, and update previouse choice
+
+- Edit car
+Open window like button "Add car"only with addition 2 buttons: "Created a date" →  changing date on calendar and "Remove car" → deleting entered data before
+
+- Add Fuel Expense
+Open window with 5 lines: Vehicle, Report date, Mileage, Number of liters, Total cost and 3 button - Cancel, Add, Close window
+
+1) Vehicle→ redirect to brand and model chozen car
+2) Report date→ redirect to calendar, when you can change date
+3) Mileage→ opportunity to change number from 0 to 999999
+4) Number of liters→ we can enter numbers from 0.01 to 9999
+5) Total cost→ we can enter numbers from 0.01 to 1000000
+6) Button "Cancel" → cancel window Add Fuel Expense
+7) Button "Add"→ create a new line with entered data
+8) Button "Close window"→ close window witout saving data
+
+    Fuel Expense
+
+Redirect to line with chozen brand and model
+Button "Add an Expense" → the same functions like from page "Garage"
+
+    Instructions
+
+Redirect to page with documents to cars, when we can select and change Brand and Model.
